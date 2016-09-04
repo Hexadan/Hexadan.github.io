@@ -1,67 +1,60 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+
+<!--
+Name: Danny McAlea
+Date: 8/29/2016
+Desc: Homepage for e-commerce site.
+-->
+
+<!-- Fair use to use album art for nonprofit educational purposes. (http://www.copyright.gov/title17/92chap1.html#107) -->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+<script type="text/javascript" src="script.js"></script>
+
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Pixi.js basic example</title>
-
-
-
-<style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-        }
-    </style>
-
-
-
+    <title>Zoom Tunes - Homepage</title>
+	<meta charset="utf-8" />
 </head>
+
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/3.0.7/pixi.min.js"></script>
-    <script>
-      // Autodetect and create the renderer
-      var renderer = PIXI.autoDetectRenderer(500, 500);
 
-      // Set the background color of the renderer to a baby-blue'ish color
-      renderer.backgroundColor = 0x3498db;
+<div class="container jumbotron">
 
-      // Append the renderer to the body of the page
-      document.body.appendChild(renderer.view);
+    <div class="text-center">
+        <img class="imageResize"src="ZoomTunesLogo.png" alt="Logo for Zoom Tunes website market."/>
+    </div>
 
-      // Create the main stage for your display objects
-      var stage = new PIXI.Container();
+    <div>
+        <nav class="text-center">
+          <a class="btn btn-primary btnFontProperties" href="aboutus.html">About Us</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Login/Registration</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Catalog</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Inventory</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Shopping Cart</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Company Directory</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Contact Us</a>
+        </nav>
+    </div>
 
-      // Add our image as a sprite
-      var goose = new PIXI.Sprite.fromImage('goose.png');
+  <hr>
 
-      // Set the anchor in the center of our sprite
-      goose.anchor.x = 1;
-      goose.anchor.y = 1;
+    <p class="col-md-10 col-md-offset-1 text-center" style="margin-top: 20px; margin-bottom:20px;">
+        Welcome to <span style="font-style:italic">Zoom Tunes</span>! We are an online marketplace for albums and vinyls of all genres.
+    </p>
 
-      // Position our goose in the center of the renderer
-      goose.position.x = renderer.width / 2;
-      goose.position.y = renderer.height / 2;
+  <hr>
 
-      // Add the goose to the stage
-      stage.addChild(goose);
-
-      // Start animating
-      animate();
-
-      function animate()
-      {
-        requestAnimationFrame(animate);
-
-        // Rotate our goose clockwise
-        goose.rotation += 0.1;
-
-        // Rotate our goose counter-clockwise
-        // goose.rotation -= 0.1;
-
-        // Render our container
-        renderer.render(stage);
-      }
-    </script>
+</div>
 </body>
 </html>
