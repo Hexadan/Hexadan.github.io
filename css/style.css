@@ -17,6 +17,12 @@ Desc: CSS for website
   height: 25%;
 }
 
+.productResize
+{
+  width:60%;
+  height:60%;
+}
+
 .btnFontProperties
 {
   font-family: monospace;
