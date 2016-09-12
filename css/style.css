@@ -4,13 +4,17 @@ Date: 9/12/2016
 Desc: CSS for website
 */
 
-
-
 .imageResize
 {
     width: 35%;
     height: 35%;
     margin-bottom: 25px;
+}
+
+.albumResize
+{
+  width: 25%;
+  height: 25%;
 }
 
 .btnFontProperties
@@ -19,7 +23,7 @@ Desc: CSS for website
   font-size: 14pt;
 }
 
-/*https://forums.adobe.com/thread/1835326*/
+/*using Bootstrap changes the hr so this is a fix: https://forums.adobe.com/thread/1835326*/
 
 hr {
     height: 2px;
@@ -27,4 +31,9 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 75%;
+}
+
+.dateModifiedFormat
+{
+  float: right;
 }
