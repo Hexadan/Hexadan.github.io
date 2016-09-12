@@ -1,3 +1,9 @@
+/*
+Name: Danny McAlea
+Date: 9/12/2016
+Desc: JavaScript for website
+*/
+
 function lastChanged()
  {
 	var lastModDate = document.lastModified;
