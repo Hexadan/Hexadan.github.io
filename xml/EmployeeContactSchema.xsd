@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "yes" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:annotation>
+  <xs:documentation>
+  This XSD schema describes the data structure for the EmployeeContactTable.xml XML file
+  </xs:documentation>
+</xs:annotation>
+
+<xs:element name="EMPLOYEELIST">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name=" EMPLOYEEINFO" type="childType"
+        minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+  <xs:complexType name="childType">
+    <xs:group ref="childElements" />
+  </xs:complexType>
+
+  <xs:group name="childElements">
+    <xs:sequence>
+      <xs:element name="CONTACT" type = "xs:string" />
+      <xs:element name="DEPT" type = "xs:string" />
+      <xs:element name="PHONE" type = "xs:string" />
+      <xs:element name="EMAIL" type = "xs:string" />
+    </xs:sequence>
+  </xs:group>
+</xs:schema>
