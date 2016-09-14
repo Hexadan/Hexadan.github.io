@@ -29,6 +29,19 @@ Desc: CSS for website
   font-size: 14pt;
 }
 
+body
+{
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 /*using Bootstrap changes the hr so this is a fix: https://forums.adobe.com/thread/1835326*/
 
 hr {
