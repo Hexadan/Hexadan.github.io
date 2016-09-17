@@ -23,10 +23,10 @@ Desc: CSS for website
   height:60%;
 }
 
-.btnFontProperties
+.albumSaleResize
 {
-  font-family: monospace;
-  font-size: 14pt;
+  width: 80%;
+  height: 80%;
 }
 
 body
@@ -41,6 +41,15 @@ body
   background-size: cover;
 }
 
+ul
+{
+  padding-left: 0px;
+}
+
+li
+{
+  list-style: none;
+}
 
 /*using Bootstrap changes the hr so this is a fix: https://forums.adobe.com/thread/1835326*/
 
