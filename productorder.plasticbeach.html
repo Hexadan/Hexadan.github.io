@@ -47,20 +47,27 @@ Desc: Plastic Beach Product Order page for e-commerce site.
   <div class="col-md-offset-1 col-md-3 text-center" style="padding-bottom:20px">
     <img class="img-thumbnail" src="images/PlasticBeach.jpg"/>
 
-    <h3>Price</h3>
-    <h4>Quantity</h4>
+    <h3>$12</h3>
+    <h4>In-stock: 5</h4>
 
-    <ul>
+    <ul style="font-size:10pt;text-align:left">
       <li style="text-decoration:underline">Song List</li>
-      <li>Song 1</li>
-      <li>Song 2</li>
-      <li>Song 3</li>
-      <li>Song 4</li>
-      <li>Song 5</li>
-      <li>Song 6</li>
-      <li>Song 7</li>
-      <li>Song 8</li>
-      <li>Song 9</li>
+      <li>Orchestral Intro</li>
+      <li>Welcome to the World of the Plastic Beach</li>
+      <li>White Flag</li>
+      <li>Rhinestone Eyes</li>
+      <li>Stylo</li>
+      <li>Superfast Jellyfish</li>
+      <li>Empire Ants</li>
+      <li>Glitter Freeze</li>
+      <li>Some Kind of Nature</li>
+      <li>On Melancholy Hill</li>
+      <li>Broken</li>
+      <li>Sweepstakes</li>
+      <li>Plastic Beach</li>
+      <li>To Binge</li>
+      <li>Cloud of Unknowing</li>
+      <li>Pirate Jet</li>
     </ul>
   </div>
 
@@ -70,14 +77,35 @@ Desc: Plastic Beach Product Order page for e-commerce site.
     </h2>
 
     <p style="word-wrap: break-word">
-      This is a detailed description of the artist. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in semper nisi, id interdum tellus. Duis aliquet accumsan erat, vel maximus augue sagittis vehicula. Sed pharetra dui sed pulvinar vulputate. Sed nulla urna, congue vitae imperdiet sit amet, volutpat eget diam.
+      Plastic Beach is the third studio album by British virtual band Gorillaz, released on 3 March 2010 by Parlophone and Virgin Records. It features guest appearances by several artists, including Snoop Dogg, Gruff Rhys, De La Soul, Bobby Womack, Mos Def, Lou Reed, Mick Jones, Mark E. Smith, Paul Simonon, Bashy, Kano, Little Dragon and the Hypnotic Brass Ensemble.
     </p>
-
-
   </div>
 
+  <div class="col-md-7">
+    <div class="text-center" style="padding-top:50px">
+      <form>
 
+        <p>Order Amount:</a>
+        <select  id="productQuantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
 
+        <input type="button" class="btn btn-sccess" value="Submit Order" onclick="" style="margin-left:20px">
+
+        <div>
+          <div><label style="padding-top:15px">Subtotal: </label> <input id="productSubtotal" type="text" size="10" readonly></div>
+          <div><label>Tax: </label> <input  id="productSubtotal" type="text" size="10" readonly></div>
+          <div><label>Shipping and Handling: </label> <input  id="productSubtotal" type="text" size="10" readonly></div>
+          <div><label>Order Total: </label> <input  id="productSubtotal" type="text" size="10" readonly></div>
+        </div>
+
+      </form>
+    </div>
+  </div>
 
   <hr>
 
@@ -85,7 +113,7 @@ Desc: Plastic Beach Product Order page for e-commerce site.
 <p class="text-center" style="font-size:15px">1962 Abbey Road, Columbus, OH</p>
 <p class="text-center" style="font-size:15px">Phone & Fax: 867-5309</p>
 
-<div id=displayDateLast class="dateModifiedFormat"></div>
+<div id="displayDateLast" class="dateModifiedFormat"></div>
 
 </div>
 </body>

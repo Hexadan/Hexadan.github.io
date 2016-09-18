@@ -51,6 +51,8 @@ li
   list-style: none;
 }
 
+
+
 /*using Bootstrap changes the hr so this is a fix: https://forums.adobe.com/thread/1835326*/
 
 hr {
@@ -65,3 +67,9 @@ hr {
 {
   float: right;
 }
+
+label {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}​
