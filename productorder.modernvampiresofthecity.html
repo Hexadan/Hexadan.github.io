@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<!--
+Name: Danny McAlea
+Date: 9/15/2016
+Desc: Plastic Beach Product Order page for e-commerce site.
+-->
+
+<!-- Fair use to use album art for nonprofit educational purposes. (http://www.copyright.gov/title17/92chap1.html#107) -->
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<html>
+<head>
+  <title>Zoom Tunes - Modern Vampires of the City</title>
+	<meta charset="utf-8" />
+</head>
+
+<body onLoad="lastChanged();">
+
+<div class="container jumbotron">
+
+    <div class="text-center">
+        <a href="index.html"><img class="logoResize" src="images/ZoomTunesLogo.png" alt="Logo for Zoom Tunes website market."/></a>
+    </div>
+
+    <div>
+        <nav class="text-center">
+          <a class="btn btn-primary btnFontProperties" href="aboutus.html">About Us</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Login/Registration</a>
+          <a class="btn btn-primary btnFontProperties" href="productorder.html">Product Order</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Catalog</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Inventory</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Shopping Cart</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Company Directory</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Contact Us</a>
+        </nav>
+    </div>
+
+  <hr>
+
+  <div class="col-md-offset-1 col-md-3 text-center" style="padding-bottom:20px">
+    <img class="img-thumbnail" src="images/ModernVampiresoftheCity.jpg" alt="album art for Vampire Weekends Modern Vampires of the City album"/>
+
+    <h3>$15</h3>
+    <h4>In-stock: 8</h4>
+
+    <ul style="font-size:10pt;text-align:left">
+      <li style="text-decoration:underline">Song List</li>
+      <li>Obvious Bicycle</li>
+      <li>Unbelievers</li>
+      <li>Step</li>
+      <li>Diane Young</li>
+      <li>Don't Lie</li>
+      <li>Hannah Hunt</li>
+      <li>Everlasting Arms</li>
+      <li>Fingers Back</li>
+      <li>Worship You</li>
+      <li>Ya Hey</li>
+      <li>Hudson</li>
+      <li>Young Lion</li>
+    </ul>
+  </div>
+
+  <div class="col-md-7" style="padding-bottom:20px; height:350px">
+    <h2 class="text-center">
+      Vampire Weekend - Modern Vampires of the City
+    </h2>
+
+    <p style="word-wrap: break-word">
+    Modern Vampires of the City is the third studio album by American indie rock band Vampire Weekend. The group began to write songs for the record during soundchecks on the supporting concert tour for their 2010 album Contra. After a period in which each member explored individual musical projects, they regrouped and continued working on Modern Vampires of the City in 2011.
+    </p>
+  </div>
+
+  <div class="col-md-7">
+    <div class="text-center" style="padding-top:50px">
+      <form id="frmProductOrder">
+
+        <p>Order Amount:</a>
+        <select  id="productQuantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+
+        <input type="button" class="btn" value="Submit Order" onclick="fproductTotal(12, 5);" style="margin-left:20px">
+
+        <div>
+          <div><label style="padding-top:15px">Subtotal: </label> <input id="productSubtotal" type="text" size="10" readonly></div>
+          <div><label>Tax: </label> <input  id="productTax" type="text" size="10" readonly></div>
+          <div><label>Shipping and Handling: </label> <input  id="productSandH" type="text" size="10" readonly></div>
+          <div><label>Order Total: </label> <input  id="productTotal" type="text" size="10" readonly></div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <hr>
+
+<p class="text-center" style="font-size:15px ">Zoom Tunes</p>
+<p class="text-center" style="font-size:15px">1962 Abbey Road, Columbus, OH</p>
+<p class="text-center" style="font-size:15px">Phone & Fax: 867-5309</p>
+
+<div id="displayDateLast" class="dateModifiedFormat"></div>
+
+</div>
+</body>
+</html>
