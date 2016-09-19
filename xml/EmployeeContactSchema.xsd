@@ -25,6 +25,7 @@
     <xs:sequence>
       <xs:element name="CONTACT" type = "xs:string" />
       <xs:element name="DEPT" type = "xs:string" />
+      <xs:element name="TITLE" type = "xs:string" />
       <xs:element name="PHONE" type = "xs:string" />
       <xs:element name="EMAIL" type = "xs:string" />
     </xs:sequence>

@@ -83,7 +83,7 @@ Desc: Plastic Beach Product Order page for e-commerce site.
 
   <div class="col-md-7">
     <div class="text-center" style="padding-top:50px">
-      <form>
+      <form id="frmProductOrder">
 
         <p>Order Amount:</a>
         <select  id="productQuantity">
@@ -94,13 +94,13 @@ Desc: Plastic Beach Product Order page for e-commerce site.
           <option value="5">5</option>
         </select>
 
-        <input type="button" class="btn btn-sccess" value="Submit Order" onclick="" style="margin-left:20px">
+        <input type="button" class="btn" value="Submit Order" onclick="fproductTotal(12);" style="margin-left:20px">
 
         <div>
           <div><label style="padding-top:15px">Subtotal: </label> <input id="productSubtotal" type="text" size="10" readonly></div>
-          <div><label>Tax: </label> <input  id="productSubtotal" type="text" size="10" readonly></div>
-          <div><label>Shipping and Handling: </label> <input  id="productSubtotal" type="text" size="10" readonly></div>
-          <div><label>Order Total: </label> <input  id="productSubtotal" type="text" size="10" readonly></div>
+          <div><label>Tax: </label> <input  id="productTax" type="text" size="10" readonly></div>
+          <div><label>Shipping and Handling: </label> <input  id="productSandH" type="text" size="10" readonly></div>
+          <div><label>Order Total: </label> <input  id="productTotal" type="text" size="10" readonly></div>
         </div>
 
       </form>
