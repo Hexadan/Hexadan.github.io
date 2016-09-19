@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<!--
+Name: Danny McAlea
+Date: 9/15/2016
+Desc: Plastic Beach Product Order page for e-commerce site.
+-->
+
+<!-- Fair use to use album art for nonprofit educational purposes. (http://www.copyright.gov/title17/92chap1.html#107) -->
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<html>
+<head>
+  <title>Zoom Tunes - Check Your Head</title>
+	<meta charset="utf-8" />
+</head>
+
+<body onLoad="lastChanged();">
+
+<div class="container jumbotron">
+
+    <div class="text-center">
+        <a href="index.html"><img class="logoResize" src="images/ZoomTunesLogo.png" alt="Logo for Zoom Tunes website market."/></a>
+    </div>
+
+    <div>
+        <nav class="text-center">
+          <a class="btn btn-primary btnFontProperties" href="aboutus.html">About Us</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Login/Registration</a>
+          <a class="btn btn-primary btnFontProperties" href="productorder.html">Product Order</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Catalog</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Inventory</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Shopping Cart</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Company Directory</a>
+          <a class="btn btn-primary btnFontProperties" href="#">Contact Us</a>
+        </nav>
+    </div>
+
+  <hr>
+
+  <div class="col-md-offset-1 col-md-3 text-center" style="padding-bottom:20px">
+    <img class="img-thumbnail" src="images/CheckYourHead.jpg"/>
+
+    <h3>$10</h3>
+    <h4>In-stock: 3</h4>
+
+    <ul style="font-size:10pt;text-align:left">
+      <li style="text-decoration:underline">Song List</li>
+      <li>Jimmy James</li>
+      <li>Funky Boss</li>
+      <li>Pass the Mic</li>
+      <li>Gratitude</li>
+      <li>Lighten Up</li>
+      <li>Finger Lickin' Good</li>
+      <li>So What'cha Want</li>
+      <li>The Biz vs. The Nuge</li>
+      <li>Time for Livin'</li>
+      <li>Something's Got to Give</li>
+      <li>The Blue Nun</li>
+      <li>Stand Together</li>
+      <li>POW</li>
+      <li>The Maestro</li>
+      <li>Groove Holmes</li>
+      <li>Live at P.J.'s</li>
+      <li>Mark on the Bus</li>
+      <li>Professor Booty</li>
+      <li>In 3's</li>
+      <li>Namasté</li>
+    </ul>
+  </div>
+
+  <div class="col-md-7" style="padding-bottom:20px; height:350px">
+    <h2 class="text-center">
+      Beastie Boys - Check Your Head
+    </h2>
+
+    <p style="word-wrap: break-word">
+      Check Your Head is the third studio album by the American hip hop group Beastie Boys, released on April 21, 1992 by Capitol Records. Three years elapsed between the releases of the band's second studio album Paul's Boutique and Check Your Head, which was recorded at the G-Son Studios in Atwater Village in 1991.
+    </p>
+  </div>
+
+  <div class="col-md-7">
+    <div class="text-center" style="padding-top:50px">
+      <form id="frmProductOrder">
+
+        <p>Order Amount:</a>
+        <select  id="productQuantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+
+        <input type="button" class="btn" value="Submit Order" onclick="fproductTotal(10, 5);" style="margin-left:20px">
+
+        <div>
+          <div><label style="padding-top:15px">Subtotal: </label> <input id="productSubtotal" type="text" size="10" readonly></div>
+          <div><label>Tax: </label> <input  id="productTax" type="text" size="10" readonly></div>
+          <div><label>Shipping and Handling: </label> <input  id="productSandH" type="text" size="10" readonly></div>
+          <div><label>Order Total: </label> <input  id="productTotal" type="text" size="10" readonly></div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <hr>
+
+<p class="text-center" style="font-size:15px ">Zoom Tunes</p>
+<p class="text-center" style="font-size:15px">1962 Abbey Road, Columbus, OH</p>
+<p class="text-center" style="font-size:15px">Phone & Fax: 867-5309</p>
+
+<div id="displayDateLast" class="dateModifiedFormat"></div>
+
+</div>
+</body>
+</html>
