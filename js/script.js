@@ -11,7 +11,7 @@ function lastChanged()
 	displayDateLast.innerHTML = "<h6>&copy;2016 Zoom Tunes</h6><h6> This document was last modified "+lastModDate+".</h6>";
 }
 
-function fproductTotal(total)
+function fproductTotal(total, shipping)
 {
 	var tempSubtotal = (document.getElementById("productQuantity").selectedIndex + 1) * total;
 
@@ -21,7 +21,7 @@ function fproductTotal(total)
 
 	document.getElementById("productTax").value = "$" + tempTax;
 
-	document.getElementById("productSandH").value = "$5";
+	document.getElementById("productSandH").value = "$" + shipping;
 
 	document.getElementById("productTotal").value = "$" + (tempSubtotal + tempTax + 5);
 }
