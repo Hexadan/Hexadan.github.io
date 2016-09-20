@@ -29,15 +29,13 @@ Desc: CSS for website
   height: 80%;
 }
 
+/*source for background: http://thesomalipress.com/columbus-named-2015-intelligent-community-of-the-year/*/
 body
 {
   background-image: url('../images/bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
