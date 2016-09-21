@@ -51,7 +51,11 @@ li
   list-style: none;
 }
 
-
+table
+{
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*using Bootstrap changes the hr so this is a fix: https://forums.adobe.com/thread/1835326*/
 
