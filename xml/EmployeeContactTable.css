@@ -1,0 +1,32 @@
+EMPLOYEEINFO
+{
+  display: block;
+  margin-top: 12pt;
+  margin-left: 18pt;
+}
+
+CONTACT
+{
+  color: navy;
+  font-weight: bolder;
+}
+
+DEPT
+{
+  font-weight: bold;
+}
+
+TITLE
+{
+  color: red;
+}
+
+PHONE
+{
+  text-decoration: underline;
+}
+
+EMAIL
+{
+  font-style: italic;
+}

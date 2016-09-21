@@ -2,8 +2,8 @@
 
 <!--
 Name: Danny McAlea
-Date: 9/7/2016
-Desc: About Us for e-commerce site.
+Date: 9/21/2016
+Desc: Homepage for e-commerce site.
 -->
 
 <!-- Fair use to use album art for nonprofit educational purposes. (http://www.copyright.gov/title17/92chap1.html#107) -->
@@ -17,7 +17,7 @@ Desc: About Us for e-commerce site.
 
 <html>
 <head>
-  <title>Zoom Tunes - About Us</title>
+  <title>Zoom Tunes - Company Directory</title>
 	<meta charset="utf-8" />
 </head>
 
@@ -26,7 +26,7 @@ Desc: About Us for e-commerce site.
 <div class="container jumbotron">
 
     <div class="text-center">
-        <a href="index.html"><img class="logoResize"src="images/ZoomTunesLogo.png" alt="Logo for Zoom Tunes website market."/></a>
+        <a href="index.html"><img class="logoResize" src="images/ZoomTunesLogo.png" alt="Logo for Zoom Tunes website market."/></a>
     </div>
 
     <div>
@@ -44,21 +44,22 @@ Desc: About Us for e-commerce site.
 
   <hr>
 
-      <p class="col-md-10 col-md-offset-1 text-center" style="margin-top: 20px; margin-bottom:20px;">
-      Zoom Tunes was founded in December 2015 in Columbus, Ohio. We strive to be the best marketplace to easily buy affordable CDs and Vinyl Records.
-      </p>
+    <div id="showTable"></div>
 
-      <p class="col-md-10 col-md-offset-1 text-center" style="font-size:14px">
-        Any questions? <a href="mailto:ZoomTunesSupport@gmail.com">Email us!</a>
-      </p>
-
+    <form>
+      <div class="text-center">
+        <input type="button" class="btn" onclick="firstPage()" value="&#x21C7 First Page"/>
+        <input type="button" class="btn" onclick="previousPage()" value="&larr; Prevous Page"/>
+        <input type="button" class="btn" onclick="nextPage()" value="Next Page &#x2192"/>
+        <input type="button" class="btn" onclick="lastPage()" value="Last Page &#x21C9"/>
+      </div>
   <hr>
 
-<p class="text-center" style="font-size:15px">Zoom Tunes</p>
-<p class="text-center"  style="font-size:15px">1962 Abbey Road, Columbus, OH</p>
-<p class="text-center"  style="font-size:15px">Phone & Fax: 867-5309</p>
+<p class="text-center" style="font-size:15px ">Zoom Tunes</p>
+<p class="text-center" style="font-size:15px">1962 Abbey Road, Columbus, OH</p>
+<p class="text-center" style="font-size:15px">Phone & Fax: 867-5309</p>
 
-<div id="displayDateLast" class="dateModifiedFormat"></div>
+<div id="displayDateLast" class="dateModifiedFormat">Any questions? <a href="mailto:ZoomTunesSupport@gmail.com">Email us!</a></div>
 
 </div>
 </body>

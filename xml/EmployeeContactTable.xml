@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- File Name: studentclub.xml -->
-<EMPLOYEELIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="EmployeeContactSchema.xsd">
 
+<!--
+Name: Danny McAlea
+Date: 9/21/2016
+Desc: XML Company Directory
+-->
+
+<EMPLOYEELIST>
   <EMPLOYEEINFO>
     <CONTACT>Ronnie Wood</CONTACT>
     <DEPT>Accounting</DEPT>
@@ -19,7 +23,7 @@ xsi:noNamespaceSchemaLocation="EmployeeContactSchema.xsd">
   </EMPLOYEEINFO>
   <EMPLOYEEINFO>
     <CONTACT>Jim Morrison</CONTACT>
-    <DEPT>Company</DEPT>
+    <DEPT>Administration</DEPT>
     <TITLE>Vice President</TITLE>
     <PHONE>614-878-1113</PHONE>
     <EMAIL>jmorrison.zoomtunes@gmail.com</EMAIL>
@@ -54,8 +58,8 @@ xsi:noNamespaceSchemaLocation="EmployeeContactSchema.xsd">
   </EMPLOYEEINFO>
   <EMPLOYEEINFO>
     <CONTACT>Eddie Vedder</CONTACT>
-    <DEPT></DEPT>
-    <TITLE>Manager</TITLE>
+    <DEPT>Accounting</DEPT>
+    <TITLE>Representative</TITLE>
     <PHONE>614-878-1118</PHONE>
     <EMAIL>evedder.zoomtunes@gmail.com</EMAIL>
   </EMPLOYEEINFO>
