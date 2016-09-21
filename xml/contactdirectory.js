@@ -24,7 +24,7 @@ var cnt = 0;
 function displayData()
 {
   //create a string of html tags for creating a table of data items.
-  txt = "<table border='1'>" +
+  txt = "<table class='text-center'border='1'>" +
   "<tr>" +
   "<th>CONTACT</th>" +
   "<th>DEPT</th>"+
