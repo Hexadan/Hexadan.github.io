@@ -10,15 +10,17 @@ else
   xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 
 
-xmlhttp.open("GET","EmployeeContactTable.xml",false);
+xmlhttp.open("GET","xml/EmployeeContactTable.xml",false);
 xmlhttp.send();
 xmlDoc = xmlhttp.responseXML;
+
 //** Global Variables **
 var x = xmlDoc.getElementsByTagName("EMPLOYEEINFO");
 
 var perPage = 5;
 var i = 0;
 var cnt = 0;
+
 function displayData()
 {
   //create a string of html tags for creating a table of data items.
