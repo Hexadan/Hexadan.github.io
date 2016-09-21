@@ -13,6 +13,7 @@ Desc: Homepage for e-commerce site.
 <link rel="stylesheet" href="css/bootstrap-theme.css">
 
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="xml/contactdirectory.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 
 <html>
@@ -21,7 +22,7 @@ Desc: Homepage for e-commerce site.
 	<meta charset="utf-8" />
 </head>
 
-<body onLoad="lastChanged();">
+<body onLoad="lastChanged(); displayData();">
 
 <div class="container jumbotron">
 
@@ -50,7 +51,7 @@ Desc: Homepage for e-commerce site.
       <div class="text-center">
         <input type="button" class="btn" onclick="firstPage()" value="&#x21C7 First Page"/>
         <input type="button" class="btn" onclick="previousPage()" value="&larr; Prevous Page"/>
-        <input type="button" class="btn" onclick="nextPage()" value="Next Page &#x2192"/>
+        <input type="button" class="btn" onclick="nextPage()" value="Next Page &rarr;"/>
         <input type="button" class="btn" onclick="lastPage()" value="Last Page &#x21C9"/>
       </div>
   <hr>
