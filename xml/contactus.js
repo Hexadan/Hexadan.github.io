@@ -15,12 +15,12 @@ xmlDoc = xmlhttp.responseXML;
 
 //** Global Variables **
 var x = xmlDoc.getElementsByTagName("EMPLOYEEINFO");
-function FindClub()
+function findEmployee()
 {
   SearchString=SearchForm.SearchText.value.toUpperCase()
   if ((SearchString == "") || (SearchString == " "))
   {
-    SearchResult.innerHTML = "<h3 style='color:red'>Please enter one or more letters of the club name in the text box. </h3>"
+    SearchResult.innerHTML = "<h3 style='color:red'>Please enter one or more letters of the employee name in the text box. </h3>"
     return
   }
   var outputResult = ""
@@ -34,7 +34,7 @@ function FindClub()
       Title = x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue;
       Phone = x[i].getElementsByTagName("PHONE")[0].childNodes[0].nodeValue;
       Email = x[i].getElementsByTagName("EMAIL")[0].childNodes[0].nodeValue;
-      outputResult += "<span style='color:maroon'>Club:&nbsp;</span>"
+      outputResult += "<span style='color:maroon'>Contact:&nbsp;</span>"
       + "<span style='font-style:italic'>" + Contact + " </span>"
       + "<br/><span style='color:maroon'>Dept:&nbsp;</span>" + Dept
             + "<br/><span style='color:maroon'>Title:&nbsp;</span>" + Title
@@ -45,7 +45,7 @@ function FindClub()
   }
 
   if (outputResult == "")
-    SearchResult.innerHTML = '<h3 style="color:red"> Sorry, no club found by that name. </h3>'
+    SearchResult.innerHTML = '<h3 style="color:red"> Sorry, no employee was found by that name. </h3>'
   else
     SearchResult.innerHTML = '<h3 style="color:red">' + outputResult + '</h3>'
 }
