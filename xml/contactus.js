@@ -14,7 +14,7 @@ xmlhttp.send();
 xmlDoc = xmlhttp.responseXML;
 
 //** Global Variables **
-var x = xmlDoc.getElementsByTagName("PHONELIST");
+var x = xmlDoc.getElementsByTagName("EMPLOYEEINFO");
 function FindClub()
 {
   SearchString=SearchForm.SearchText.value.toUpperCase()
