@@ -36,8 +36,8 @@ function FindClub()
       Email = x[i].getElementsByTagName("EMAIL")[0].childNodes[0].nodeValue;
       outputResult += "<span style='color:maroon'>Club:&nbsp;</span>"
       + "<span style='font-style:italic'>" + Contact+ " </span>"
-      + "<br/><span style='color:maroon'>Contact:&nbsp;</span>" + Dept
-            + "<br/><span style='color:maroon'>Phone:&nbsp;</span>" + Title
+      + "<br/><span style='color:maroon'>Dept:&nbsp;</span>" + Dept
+            + "<br/><span style='color:maroon'>Title:&nbsp;</span>" + Title
       + "<br/><span style='color:maroon'>Phone:&nbsp;</span>" + Phone
       + "<br/><span style='color:maroon'>Email:&nbsp;</span>" + Email
       + "<br/><br />"
