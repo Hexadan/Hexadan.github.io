@@ -9,7 +9,6 @@ if (window.XMLHttpRequest)
 else
   xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 
-
 xmlhttp.open("GET","xml/EmployeeContactTable.xml",false);
 xmlhttp.send();
 xmlDoc = xmlhttp.responseXML;
