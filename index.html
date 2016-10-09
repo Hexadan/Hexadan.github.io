@@ -13,6 +13,7 @@ Desc: Homepage for e-commerce site.
 <link rel="stylesheet" href="css/bootstrap-theme.css">
 
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/navbar.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 
 <html>
@@ -21,7 +22,7 @@ Desc: Homepage for e-commerce site.
 	<meta charset="utf-8" />
 </head>
 
-<body onLoad="lastChanged();">
+<body onLoad="lastChanged(); createNavbar();">
 
 <div class="container jumbotron">
 
@@ -29,17 +30,7 @@ Desc: Homepage for e-commerce site.
         <a href="index.html"><img class="logoResize" src="images/ZoomTunesLogo.png" alt="Logo for Zoom Tunes website market."/></a>
     </div>
 
-    <div>
-        <nav class="text-center">
-          <a class="btn btn-primary" href="aboutus.html">About Us</a>
-          <a class="btn btn-primary" href="#">Login/Registration</a>
-          <a class="btn btn-primary" href="productorder.html">Product Order</a>
-          <a class="btn btn-primary" href="#">Catalog</a>
-          <a class="btn btn-primary" href="#">Inventory</a>
-          <a class="btn btn-primary" href="#">Shopping Cart</a>
-          <a class="btn btn-primary" href="companydirectory.html">Company Directory</a>
-          <a class="btn btn-primary" href="contactus.html">Contact Us</a>
-        </nav>
+    <div id="navBarDisplay">
     </div>
 
   <hr>
